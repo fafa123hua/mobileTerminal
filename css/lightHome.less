@@ -1,0 +1,623 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+// lightHome
+.lightHome {
+    position: relative;
+    width: 375px;
+    height: 812px;
+    background: #F5F5F5;
+}
+
+/* https://www.figma.com/file/fMKJommx7Vg5rWqv4tbjr6/banking-app-free-ui-kit-for-figma?node-id=31%3A1661 */
+// 头公共样式
+// 矢量图
+.commonHeaderVector {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 12px;
+    top: 10px;
+    background-size: 100% 100%;
+}
+
+// 小盒子
+.commonHeaderBox {
+    position: absolute;
+    width: 48px;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+// 头
+.header {
+    position: absolute;
+    width: 375px;
+    height: 64px;
+    left: 0px;
+    top: 44px;
+
+    // 头像
+    &__profile {
+        position: absolute;
+        width: 54px;
+        height: 54px;
+        left: 161px;
+        top: 5px;
+        border: 2px solid #f9f900;
+        border-radius: 50%;
+        box-sizing: border-box;
+
+        // 灰色环
+        &__ellipse {
+            position: absolute;
+            width: 27px;
+            height: 27px;
+            left: -2px;
+            top: -2px;
+            background-color: #8E8E93;
+            border-top-left-radius: 100%;
+        }
+
+        // 覆盖多余部分
+        &__inner {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 0px;
+            top: 0px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        // 图片
+        &__photo {
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            left: 3px;
+            top: 3px;
+            background-image: url(/img/header.png);
+            border-radius: 50%;
+        }
+    }
+
+    // 设置
+    &__settings {
+        position: absolute;
+        width: 48px;
+        height: 44px;
+        left: 16px;
+        top: 10px;
+
+        // 图
+        &__vector {
+            background-image: url(/img/settingsVector.png);
+        }
+    }
+
+    // 消息
+    &__notification {
+        position: absolute;
+        width: 48px;
+        height: 44px;
+        left: 311px;
+        top: 10px;
+
+        // 图
+        &__vector {
+            background-image: url(/img/notificationVector.png);
+        }
+
+        // 点
+        &__spot--light {
+            position: absolute;
+            left: 83.33%;
+            right: 0%;
+            top: 0%;
+            bottom: 81.82%;
+            background: #32D74B;
+            border: 2px solid #F5F5F5;
+            border-radius: 50%;
+        }
+    }
+
+}
+
+// 卡公共样式
+// dat
+.commonCardInformationDot {
+    position: static;
+    width: 8px;
+    height: 8px;
+    top: calc(50% - 8px/2);
+    background: #8E8E93;
+    opacity: 0.2;
+    flex: none;
+    flex-grow: 0;
+    margin: 0 11px 0 0;
+    border-radius: 50%;
+}
+
+// 卡
+.cardInformation {
+    position: absolute;
+    width: 375px;
+    height: 290px;
+    left: 0px;
+    top: 108px;
+
+    // 卡槽
+    &__pack {
+        position: absolute;
+        width: 563px;
+        height: 214px;
+        left: 0px;
+        top: 16px;
+
+        // 信息
+        &__balance {
+            position: absolute;
+            width: 252px;
+            height: 214px;
+            left: 0px;
+            top: 0px;
+
+            // 总资产
+            &__total {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                position: absolute;
+                width: 178px;
+                height: 64px;
+                left: 28px;
+                top: 16px;
+
+                &__text {
+                    position: static;
+                    width: 110px;
+                    height: 20px;
+                    left: 0px;
+                    top: 0px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-feature-settings: 'ss04'on;
+                    color: #8E8E93;
+                }
+
+                &__textmoney {
+                    position: static;
+                    width: 178px;
+                    height: 36px;
+                    left: 0px;
+                    top: 28px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 36px;
+                    font-feature-settings: 'ss04'on;
+                    color: #000000;
+
+                }
+            }
+
+            // 本月
+            &__month {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                position: absolute;
+                width: 137px;
+                height: 86px;
+                left: 28px;
+                top: 112px;
+
+                &__text {
+                    position: static;
+                    width: 89px;
+                    height: 20px;
+                    left: 0px;
+                    top: 0px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-feature-settings: 'ss04'on;
+                    color: #8E8E93;
+
+                }
+
+                // 支出
+                &__case {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+
+                    position: static;
+                    width: 137px;
+                    height: 56px;
+                    left: 0px;
+                    top: 30px;
+
+                    &__income {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        padding: 0px;
+
+                        position: static;
+                        width: 137px;
+                        height: 24px;
+                        left: 0px;
+                        top: 0px;
+
+                        &__text {
+                            position: static;
+                            width: 101px;
+                            height: 24px;
+                            left: 36px;
+                            top: 0px;
+                            font-family: Poppins;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-feature-settings: 'ss04'on;
+                            color: #000000;
+                        }
+
+                        &__vector {
+                            position: static;
+                            width: 16px;
+                            height: 15px;
+                            left: 4px;
+                            top: 4px;
+                            flex: none;
+                            order: 0;
+                            flex-grow: 0;
+                            margin: 5px 12px 0 0;
+                            background-image: url(/img/incomeVector.png);
+                            background-size: 100%;
+                        }
+                    }
+
+                    &__expense {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        padding: 0px;
+                        position: static;
+                        width: 131px;
+                        height: 24px;
+                        left: 0px;
+                        top: 32px;
+
+                        &__text {
+                            position: static;
+                            width: 95px;
+                            height: 24px;
+                            left: 36px;
+                            top: 0px;
+                            font-family: Poppins;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-feature-settings: 'ss04'on;
+                            color: #000000;
+                        }
+
+                        &__vector {
+                            position: static;
+                            width: 16px;
+                            height: 15px;
+                            left: 0px;
+                            top: 48px;
+                            flex: none;
+                            order: 0;
+                            flex-grow: 0;
+                            margin: 5px 12px 0 0;
+                            background-image: url(/img/expenseVector.png);
+                            background-size: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 轮播点
+    &__control {
+        position: absolute;
+        width: 375px;
+        height: 44px;
+        left: 0px;
+        top: 246px;
+
+        &__frame {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            position: absolute;
+            width: 65px;
+            height: 8px;
+            left: 50%;
+            transform: translate(-50%);
+            top: 18px;
+
+            // 点1
+            &__dot1 {
+                background-color: #32D74B !important;
+                opacity: 1;
+                order: 0;
+            }
+
+            // 点2
+            &__dot2 {
+                order: 1;
+            }
+
+            // 点3
+            &__dot3 {
+                order: 2;
+            }
+
+            // 点4
+            &__dot4 {
+                order: 3;
+            }
+        }
+    }
+}
+
+// 功能按键公共样式
+// 按键盒子
+.commonButton {
+    position: absolute;
+    width: 107px;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+// 文字
+.commonButtonText {
+    position: absolute;
+    width: 107px;
+    height: 20px;
+    left: 0px;
+    top: 54px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-feature-settings: 'ss04'on;
+    color: #8E8E93;
+}
+
+// 矢量图
+.commonButtonVector {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 41.5px;
+    top: 10px;
+    background-size: 100% 100%;
+}
+
+// 功能按键
+.button {
+    position: absolute;
+    width: 343px;
+    height: 270px;
+    left: 16px;
+    top: 414px;
+
+    &__transfer {
+        position: absolute;
+        width: 107px;
+        height: 74px;
+        left: 0px;
+        top: 0px;
+
+        &__vector {
+            background-image: url(/img/transferVector.png);
+        }
+    }
+
+    &__exchange {
+        position: absolute;
+        width: 107px;
+        height: 74px;
+        left: 118px;
+        top: 0px;
+
+        &__vector {
+            background-image: url(/img/exchangeVector.png);
+        }
+    }
+
+    &__payments {
+        position: absolute;
+        width: 107px;
+        height: 74px;
+        left: 236px;
+        top: 0px;
+
+        &__vector {
+            background-image: url(/img/paymentsVector.png);
+        }
+    }
+
+    &__credits {
+        position: absolute;
+        width: 107px;
+        height: 74px;
+        left: 0px;
+        top: 98px;
+
+        &__vector {
+            background-image: url(/img/creditsVector.png);
+        }
+    }
+
+    &__deposits {
+        position: absolute;
+        width: 107px;
+        height: 74px;
+        left: 118px;
+        top: 98px;
+
+        &__vector {
+            background-image: url(/img/depositsVector.png);
+        }
+    }
+
+    &__cashback {
+        position: absolute;
+        width: 107px;
+        height: 74px;
+        left: 236px;
+        top: 98px;
+
+        &__vector {
+            background-image: url(/img/cashbackVector.png);
+        }
+    }
+
+    &__atm {
+        position: absolute;
+        width: 107px;
+        height: 74px;
+        left: 0px;
+        top: 196px;
+
+        &__vector {
+            background-image: url(/img/atmVector.png);
+        }
+    }
+
+    &__security {
+        position: absolute;
+        width: 107px;
+        height: 74px;
+        left: 118px;
+        top: 196px;
+
+        &__vector {
+            background-image: url(/img/securityVector.png);
+        }
+    }
+
+    &__more {
+        position: absolute;
+        width: 107px;
+        height: 74px;
+        left: 236px;
+        top: 196px;
+
+        &__vector {
+            background-image: url(/img/moreVector.png);
+        }
+
+    }
+}
+
+// 导航栏公共样式
+// 矢量图
+.commonMenuBarVector {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 41.5px;
+    top: 10px;
+    background-size: 100% 100%;
+}
+
+// 导航栏
+.menuBar {
+    position: absolute;
+    width: 375px;
+    height: 94px;
+    left: 0px;
+    top: 718px;
+
+    // 背景
+    &__bg {
+        position: absolute;
+        width: 375px;
+        height: 94px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+        border-radius: 24px 24px 0px 0px;
+    }
+
+    // 支持
+    &__support {
+        position: absolute;
+        width: 107px;
+        height: 44px;
+        left: 252px;
+        top: 16px;
+
+        &__vector {
+            background-image: url(/img/supportVector.png);
+        }
+    }
+
+    // 统计数据
+    &__stats {
+        position: absolute;
+        width: 107px;
+        height: 44px;
+        left: 134px;
+        top: 16px;
+
+        &__vector {
+            background-image: url(/img/statsVector.png);
+        }
+    }
+
+    // 首页
+    &__home {
+        position: absolute;
+        width: 107px;
+        height: 44px;
+        left: 16px;
+        top: 16px;
+
+        &__rectangle {
+            position: absolute;
+            width: 107px;
+            height: 44px;
+            left: 0px;
+            top: 0px;
+            background: linear-gradient(71.48deg, #FFD60A 0%, #32D74B 62.9%);
+            border-radius: 12px;
+        }
+
+        &__vector {
+            background-image: url(/img/homeVector.png);
+        }
+    }
+}

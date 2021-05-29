@@ -1,0 +1,511 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.lightHome {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: #F5F5F5;
+}
+/* https://www.figma.com/file/fMKJommx7Vg5rWqv4tbjr6/banking-app-free-ui-kit-for-figma?node-id=31%3A1661 */
+.commonHeaderVector {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 12px;
+  top: 10px;
+  background-size: 100% 100%;
+}
+.commonHeaderBox {
+  position: absolute;
+  width: 48px;
+  height: 44px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+.header {
+  position: absolute;
+  width: 375px;
+  height: 64px;
+  left: 0px;
+  top: 44px;
+}
+.header__profile {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  left: 161px;
+  top: 5px;
+  border: 2px solid #f9f900;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.header__profile__ellipse {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  left: -2px;
+  top: -2px;
+  background-color: #8E8E93;
+  border-top-left-radius: 100%;
+}
+.header__profile__inner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.header__profile__photo {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 3px;
+  top: 3px;
+  background-image: url(/img/header.png);
+  border-radius: 50%;
+}
+.header__settings {
+  position: absolute;
+  width: 48px;
+  height: 44px;
+  left: 16px;
+  top: 10px;
+}
+.header__settings__vector {
+  background-image: url(/img/settingsVector.png);
+}
+.header__notification {
+  position: absolute;
+  width: 48px;
+  height: 44px;
+  left: 311px;
+  top: 10px;
+}
+.header__notification__vector {
+  background-image: url(/img/notificationVector.png);
+}
+.header__notification__spot--light {
+  position: absolute;
+  left: 83.33%;
+  right: 0%;
+  top: 0%;
+  bottom: 81.82%;
+  background: #32D74B;
+  border: 2px solid #F5F5F5;
+  border-radius: 50%;
+}
+.commonCardInformationDot {
+  position: static;
+  width: 8px;
+  height: 8px;
+  top: calc(50% - 8px/2);
+  background: #8E8E93;
+  opacity: 0.2;
+  flex: none;
+  flex-grow: 0;
+  margin: 0 11px 0 0;
+  border-radius: 50%;
+}
+.cardInformation {
+  position: absolute;
+  width: 375px;
+  height: 290px;
+  left: 0px;
+  top: 108px;
+}
+.cardInformation__pack {
+  position: absolute;
+  width: 563px;
+  height: 214px;
+  left: 0px;
+  top: 16px;
+}
+.cardInformation__pack__balance {
+  position: absolute;
+  width: 252px;
+  height: 214px;
+  left: 0px;
+  top: 0px;
+}
+.cardInformation__pack__balance__total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 178px;
+  height: 64px;
+  left: 28px;
+  top: 16px;
+}
+.cardInformation__pack__balance__total__text {
+  position: static;
+  width: 110px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-feature-settings: 'ss04' on;
+  color: #8E8E93;
+}
+.cardInformation__pack__balance__total__textmoney {
+  position: static;
+  width: 178px;
+  height: 36px;
+  left: 0px;
+  top: 28px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  font-feature-settings: 'ss04' on;
+  color: #000000;
+}
+.cardInformation__pack__balance__month {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 137px;
+  height: 86px;
+  left: 28px;
+  top: 112px;
+}
+.cardInformation__pack__balance__month__text {
+  position: static;
+  width: 89px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-feature-settings: 'ss04' on;
+  color: #8E8E93;
+}
+.cardInformation__pack__balance__month__case {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 137px;
+  height: 56px;
+  left: 0px;
+  top: 30px;
+}
+.cardInformation__pack__balance__month__case__income {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 137px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+}
+.cardInformation__pack__balance__month__case__income__text {
+  position: static;
+  width: 101px;
+  height: 24px;
+  left: 36px;
+  top: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  font-feature-settings: 'ss04' on;
+  color: #000000;
+}
+.cardInformation__pack__balance__month__case__income__vector {
+  position: static;
+  width: 16px;
+  height: 15px;
+  left: 4px;
+  top: 4px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 5px 12px 0 0;
+  background-image: url(/img/incomeVector.png);
+  background-size: 100%;
+}
+.cardInformation__pack__balance__month__case__expense {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 131px;
+  height: 24px;
+  left: 0px;
+  top: 32px;
+}
+.cardInformation__pack__balance__month__case__expense__text {
+  position: static;
+  width: 95px;
+  height: 24px;
+  left: 36px;
+  top: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  font-feature-settings: 'ss04' on;
+  color: #000000;
+}
+.cardInformation__pack__balance__month__case__expense__vector {
+  position: static;
+  width: 16px;
+  height: 15px;
+  left: 0px;
+  top: 48px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 5px 12px 0 0;
+  background-image: url(/img/expenseVector.png);
+  background-size: 100%;
+}
+.cardInformation__control {
+  position: absolute;
+  width: 375px;
+  height: 44px;
+  left: 0px;
+  top: 246px;
+}
+.cardInformation__control__frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 65px;
+  height: 8px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 18px;
+}
+.cardInformation__control__frame__dot1 {
+  background-color: #32D74B !important;
+  opacity: 1;
+  order: 0;
+}
+.cardInformation__control__frame__dot2 {
+  order: 1;
+}
+.cardInformation__control__frame__dot3 {
+  order: 2;
+}
+.cardInformation__control__frame__dot4 {
+  order: 3;
+}
+.commonButton {
+  position: absolute;
+  width: 107px;
+  height: 44px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+.commonButtonText {
+  position: absolute;
+  width: 107px;
+  height: 20px;
+  left: 0px;
+  top: 54px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-feature-settings: 'ss04' on;
+  color: #8E8E93;
+}
+.commonButtonVector {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 41.5px;
+  top: 10px;
+  background-size: 100% 100%;
+}
+.button {
+  position: absolute;
+  width: 343px;
+  height: 270px;
+  left: 16px;
+  top: 414px;
+}
+.button__transfer {
+  position: absolute;
+  width: 107px;
+  height: 74px;
+  left: 0px;
+  top: 0px;
+}
+.button__transfer__vector {
+  background-image: url(/img/transferVector.png);
+}
+.button__exchange {
+  position: absolute;
+  width: 107px;
+  height: 74px;
+  left: 118px;
+  top: 0px;
+}
+.button__exchange__vector {
+  background-image: url(/img/exchangeVector.png);
+}
+.button__payments {
+  position: absolute;
+  width: 107px;
+  height: 74px;
+  left: 236px;
+  top: 0px;
+}
+.button__payments__vector {
+  background-image: url(/img/paymentsVector.png);
+}
+.button__credits {
+  position: absolute;
+  width: 107px;
+  height: 74px;
+  left: 0px;
+  top: 98px;
+}
+.button__credits__vector {
+  background-image: url(/img/creditsVector.png);
+}
+.button__deposits {
+  position: absolute;
+  width: 107px;
+  height: 74px;
+  left: 118px;
+  top: 98px;
+}
+.button__deposits__vector {
+  background-image: url(/img/depositsVector.png);
+}
+.button__cashback {
+  position: absolute;
+  width: 107px;
+  height: 74px;
+  left: 236px;
+  top: 98px;
+}
+.button__cashback__vector {
+  background-image: url(/img/cashbackVector.png);
+}
+.button__atm {
+  position: absolute;
+  width: 107px;
+  height: 74px;
+  left: 0px;
+  top: 196px;
+}
+.button__atm__vector {
+  background-image: url(/img/atmVector.png);
+}
+.button__security {
+  position: absolute;
+  width: 107px;
+  height: 74px;
+  left: 118px;
+  top: 196px;
+}
+.button__security__vector {
+  background-image: url(/img/securityVector.png);
+}
+.button__more {
+  position: absolute;
+  width: 107px;
+  height: 74px;
+  left: 236px;
+  top: 196px;
+}
+.button__more__vector {
+  background-image: url(/img/moreVector.png);
+}
+.commonMenuBarVector {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 41.5px;
+  top: 10px;
+  background-size: 100% 100%;
+}
+.menuBar {
+  position: absolute;
+  width: 375px;
+  height: 94px;
+  left: 0px;
+  top: 718px;
+}
+.menuBar__bg {
+  position: absolute;
+  width: 375px;
+  height: 94px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border-radius: 24px 24px 0px 0px;
+}
+.menuBar__support {
+  position: absolute;
+  width: 107px;
+  height: 44px;
+  left: 252px;
+  top: 16px;
+}
+.menuBar__support__vector {
+  background-image: url(/img/supportVector.png);
+}
+.menuBar__stats {
+  position: absolute;
+  width: 107px;
+  height: 44px;
+  left: 134px;
+  top: 16px;
+}
+.menuBar__stats__vector {
+  background-image: url(/img/statsVector.png);
+}
+.menuBar__home {
+  position: absolute;
+  width: 107px;
+  height: 44px;
+  left: 16px;
+  top: 16px;
+}
+.menuBar__home__rectangle {
+  position: absolute;
+  width: 107px;
+  height: 44px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(71.48deg, #FFD60A 0%, #32D74B 62.9%);
+  border-radius: 12px;
+}
+.menuBar__home__vector {
+  background-image: url(/img/homeVector.png);
+}
